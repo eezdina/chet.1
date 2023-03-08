@@ -1,0 +1,9 @@
+public class Sber extends Chet{
+    int balance;
+    Sber (int a){
+        if (a>0) balance = a; else balance=0;
+    }
+    void add(int nn){
+        balance = balance + nn;
+    }
+}
