@@ -1,0 +1,16 @@
+public class Rach extends Sber{
+    int balance;
+    Rach (int k)
+    {
+        super(k);
+        if (k>0) balance = k; else balance=0;
+    }
+    void add(int x) {
+        balance = balance + x;
+
+    }
+    public void pay(int r){
+
+        if (balance>r) balance = balance-r; else System.out.println("Отказ");
+    }
+}
