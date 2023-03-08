@@ -1,0 +1,15 @@
+public class Chet {
+    public static void main(String[] args) {
+        Sber a = new Sber(300);
+        a.add(200);
+
+        Cred b = new Cred(-20);
+        b.pay(30);// отказ
+        b.pay(10);// остаток -10
+
+        Rach c = new Rach();
+        c.pay(100);// отказ
+        c.add(200);
+        c.pay(50);
+    }
+}
