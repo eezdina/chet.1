@@ -1,0 +1,10 @@
+public class Cred extends Chet{
+    int balance;
+    Cred(int y){
+       super(y);
+       if(y<0) balance = y; else balance = 0;
+    }
+    public void pay(int h){
+        if(h>0) balance =balance - h;else System.out.println("Отказ");
+    }
+}
